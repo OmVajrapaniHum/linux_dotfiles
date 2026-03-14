@@ -68,7 +68,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
 
 vim.opt.termguicolors = true
 vim.opt.background = "light"
-vim.cmd("colorscheme quiet")
+vim.cmd("colorscheme lunaperche")
 
 
 -- [[ Keymapping ]]
