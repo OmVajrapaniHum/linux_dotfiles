@@ -1,3 +1,4 @@
+#!/bin/bash
 ################################################################################
 # BASHRC
 # Author: Jakob Janzen
@@ -37,13 +38,16 @@ if [[ -x /usr/bin/dircolors ]]; then
 fi
 
 if [[ -f ~/.bash_aliases ]]; then
+  # shellcheck disable=SC1090,SC1091
   . ~/.bash_aliases
 fi
 
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
+    # shellcheck disable=SC1091
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
+    # shellcheck disable=SC1091
     . /etc/bash_completion
   fi
 fi

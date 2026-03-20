@@ -1,3 +1,4 @@
+#!/bin/sh
 ################################################################################
 # PROFILE
 # Author: Jakob Janzen
@@ -8,6 +9,7 @@
 
 if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
+	# shellcheck disable=SC1091
 	. "$HOME/.bashrc"
     fi
 fi
