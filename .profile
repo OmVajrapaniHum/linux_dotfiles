@@ -9,16 +9,17 @@
 
 if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
-	# shellcheck disable=SC1091
-	. "$HOME/.bashrc"
+        # shellcheck disable=SC1091
+        . "$HOME/.bashrc"
     fi
 fi
 
-if [ -d "$HOME/bin" ] ; then
+if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ; then
+if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+export GTK_OVERLAY_SCROLLING=0
