@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- NEOVIM CONFIGURATION
 -- Author: Jakob Janzen
--- Last Modified: 2026-03-14
+-- Last Modified: 2026-05-01
 --
 -- ~/.config/nvim/init.lua
 -------------------------------------------------------------------------------
@@ -67,8 +67,8 @@ vim.api.nvim_create_autocmd("TermOpen", {
 -- [[ Colorscheme ]]
 
 vim.opt.termguicolors = true
-vim.opt.background = "light"
-vim.cmd("colorscheme lunaperche")
+vim.opt.background = "dark"
+vim.cmd("colorscheme quiet")
 
 
 -- [[ Keymapping ]]
